@@ -3,6 +3,10 @@ body{
   color : red;
 }
 a:link{
-    display: inline-block;
     padding: 10px;
 }
+.nav li{
+  list-style-type: none;
+  diplay: inline-block;
+  padding: 10px;
+ }
