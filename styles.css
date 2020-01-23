@@ -6,11 +6,24 @@ a:link{
     padding: 10px;
 }
 .nav{
-  background-color: yellow;
+  background-color: #0080FF;
   padding: 10px;
 }
 .nav li{
   list-style-type: none;
   diplay: inline-block;
   padding: 10px;
+ }
+ .sections{
+     padding: 50px;
+     text-align: left;
+     font-size: 20px;
+     background-image: url('./eu.jpg');
+ }
+ .sections h2{
+     text-align: center;
+     color: blueviolet; 
+ }
+ .sections p{
+     font-size: 10px;
  }
