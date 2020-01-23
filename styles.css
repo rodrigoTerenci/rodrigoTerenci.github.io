@@ -5,6 +5,10 @@ body{
 a:link{
     padding: 10px;
 }
+.nav{
+  background-color: #2ECCFA;
+  padding: 10px;
+}
 .nav li{
   list-style-type: none;
   diplay: inline-block;
