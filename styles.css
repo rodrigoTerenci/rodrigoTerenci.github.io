@@ -1,12 +1,12 @@
 body{
-  background: lightblue;
+  background: #2ECCFA;
   color : red;
 }
 a:link{
     padding: 10px;
 }
 .nav{
-  background-color: #2ECCFA;
+  background-color: yellow;
   padding: 10px;
 }
 .nav li{
