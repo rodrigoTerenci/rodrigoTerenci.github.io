@@ -1,7 +1,8 @@
 /*************Header***************/
-	.main_header{
+.main_header{
 	width: 100%;
-	background-color: #2D3142;}
+	background-color: #2D3142;
+}
 
 .main_header .main_header_content{
 	max-width: 1300px;
@@ -43,107 +44,4 @@
 	text-decoration: underline;
 	color: red;
 
-}
-	.main_header .main_header_logo h1{
-
-		size: 0.8em;
-	}
-/**********TUTOR***********/
-	.main_tutor{
-		width: 100%;
-		background-color: #2D3142;
-		color: #FFF;
-		text-align: center;
-		padding: 5px;
-	}
-
-	.main_tutor > header{
-		padding: 20px;
-		
-	}
-
-	.main_tutor > header > h1{
-		font-size: 1.9em;
-		margin-bottom: 5px;
-		width: 100%;
-	}
-
-	.main_tutor > header > p{
-		font-size: 0.9em;
-		
-	}
-	/************TUTOR-CONTENT*********/
-
-	.main_tutor_content{
-		max-width: 1300px;
-		margin: 0 auto;
-	}
-
-	.main_tutor_circle_image{
-		margin: 20px auto;
-		background-color: #D36833;
-		width:210px;
-		height:210px;
-
-	}
-
-
-	.main_tutor_circle_image >img{
-		width:205px;
-		height:205px;
-		margin:3px auto;
-	}
-	 /************main_tutor_content_myhistory************/
-
-	 .main_tutor_content_myhistory{
-	 	margin-bottom: 20px;
-	 }
-
-	 .main_tutor_content_myhistory > header > h2{
-	 	margin-bottom: 20px;
-	 	font-size: 0.9em;
-	 }
-
-	 .main_tutor_content_myhistory > header > p{
-	 	font-size: 0.77em;
-	 	margin:0 160px;
-
-	 }
-	 /****************TUTOR-SOCIAL-NETWORK***************************/
-	.main_tutor_social_network{
-		margin: 40px auto;
-		background-color: #D36833;
-		width: 50%;
-	}
-
-	.main_tutor_social_network > header > h2{
-		padding-top: 10px;
-		text-align: center;
-		font-size: 1.3em;
-		
-	}
-
-	/****************TUTOR-SOCIAL-NETWORK-CONTENT******************/
-	.main_tutor_social_network_content{
-		width: 100%;
-		display:flex; 
-		flex-wrap:wrap;
-		justify-content: space-between;
-	}
-
-	.main_tutor_social_network_content > article{
-		flex-basis:25%;
-	}
-
-	.main_tutor_social_network_content > article > header > a > h3{
-		background-color: #FFF;
-		margin:20px;
-		padding:5px;
-		text-align: center;	
-		border-radius: 5px;
-		--moz-border-radius:5px;
-		--webkit-border-radius:5px;
-		font-size:0.7em;
-		color: #D36833;
-	}
 }
