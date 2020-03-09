@@ -1,6 +1,9 @@
 body{
-  background: #2ECCFA;
+  background: black;
   color : red;
+}
+header{
+  background:red;
 }
 a:link{
     padding: 10px;
