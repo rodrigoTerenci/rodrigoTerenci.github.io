@@ -1,6 +1,6 @@
 # curriculo.github.io
 Currículo-Estágio
-Eu amo :coffe:,:pizza:and:dancer:
+Eu amo :cafe:,:pizza:and:dancer:
 :computer:
 :star:
 ###Links
