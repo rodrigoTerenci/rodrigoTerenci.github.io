@@ -33,6 +33,7 @@ section header p{
  }
  .main_card img{
      border-radius: 100%;
+     border: 10px solid gold;
      width: 200px;
      height: 200px;
  }
