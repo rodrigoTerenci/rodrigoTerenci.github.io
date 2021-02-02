@@ -1,6 +1,6 @@
 body{
-  background: black;
-  color : #371a47;
+  background: #371a47;
+  color : white;
 }
 header{
   color:#ee975c;
@@ -11,13 +11,16 @@ header{
 a:link{
     padding: 10px;
 }
+section header p{
+  color: whitesmoke;
+}
 .nav{
   background-color: #0080FF;
   padding: 210px;
 }
 .nav li{
   list-style-type: none;
-  diplay: inline-block;
+  display: inline-block;
   padding: 10px;
  }
  .main_card{
