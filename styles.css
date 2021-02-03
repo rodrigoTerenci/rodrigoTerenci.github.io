@@ -33,6 +33,7 @@ a:link{
     color: white;
 }
  .main_card img{
+     margin: auto auto;
      border-radius: 100%;
      border: 10px solid #ee975c;
      width: 300px;
