@@ -21,6 +21,7 @@ a:link{
   padding: 10px;
  }
  .main_card{
+    border: 8px solid black;
     padding: 50px;
     text-align: center;
     font-size: 20px;
@@ -33,7 +34,7 @@ a:link{
 }
  .main_card img{
      border-radius: 100%;
-     border: 10px solid black;
+     border: 10px solid #371a48;
      width: 200px;
      height: 200px;
  }
