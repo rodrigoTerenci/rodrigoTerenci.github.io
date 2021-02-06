@@ -40,4 +40,12 @@ a:link{
      height: 300px;
  }
  
-
+@media(max-width:20em){
+     .main_card img{
+     margin: auto auto;
+     border-radius: 100%;
+     border: 10px solid #ee975c;
+     width: 150px;
+     height: 150px;
+ }
+}
