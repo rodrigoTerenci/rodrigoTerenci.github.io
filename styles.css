@@ -35,9 +35,9 @@ a:link{
  .main_card img{
      margin: auto auto;
      border-radius: 100%;
-     border: 10px solid #ee975c;
-     width: 300px;
-     height: 300px;
+     border: 3px solid #ee975c;
+     width: 200px;
+     height: 200px;
  }
  
 @media(max-width:20em){
