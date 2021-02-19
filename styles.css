@@ -9,6 +9,9 @@ header{
   margin:auto;
   padding: auto;
 }
+article{
+    margin: auto auto;
+}
 a:link{
     padding: 10px;
 }
