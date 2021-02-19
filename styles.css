@@ -11,6 +11,7 @@ header{
 }
 article{
     margin: auto auto;
+    /*justify-content: center;*/
 }
 a:link{
     padding: 10px;
@@ -39,16 +40,15 @@ a:link{
      margin: auto auto;
      border-radius: 100%;
      border: 3px solid #ee975c;
-     width: 300px;
-     height: 300px;
+     width: 250px;
+     height: 250px;
  }
  
-@media(max-width:20em){
+/*@media(max-width:20em){
      .main_card img{
      margin: auto auto;
      border-radius: 100%;
      border: 10px solid #ee975c;
      width: 150px;
      height: 150px;
- }
-}
+ }*/
