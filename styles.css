@@ -68,9 +68,10 @@ a:link{
 } 
 @media(max-width:20em){
      .main_card img{
-     margin: auto auto;
-     border-radius: 100%;
-     border: 3px solid #ee975c;
-     width: 150px;
-     height: 150px;
+        margin: auto auto;
+        border-radius: 100%;
+        border: 3px solid #ee975c;
+        width: 150px;
+        height: 150px;
+     }
  }
