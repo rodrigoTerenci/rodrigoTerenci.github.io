@@ -55,12 +55,10 @@ a:link{
 }
 
 .main_social_network > article h3 a{
-    background-color: #FFF;
-    color:#ee975c ;
+    color:#2D3142;
     width: 100px;
-    height: 100px;
-
-} 
+    height: 300px;
+}
 
 .main_social_network > article h3 a:hover{
     background-color: #ee975c;
