@@ -1,5 +1,5 @@
 body{
-  background-color: #2D3142;
+  background: url(./_cdn/img/wallpaperflare.com_wallpaper.jpg);
   color : white;
  
 }
@@ -27,7 +27,9 @@ a:link{
  .main_card{
    /* padding: 50px;*/
     text-align: center;
+    margin: auto auto;
     font-size: 20px;
+    
  }
 
  .main_card header p{
@@ -42,7 +44,8 @@ a:link{
  }
 /*SOCIAL NETWORK*/
 .main_social_network {
-    width: 100%;
+    width: 80%;
+    margin: auto;
     background-color: #ee975c;
     color:#2D3142 !important;
     display: flex;
@@ -60,9 +63,9 @@ a:link{
 }
 
 .main_social_network > article h3 a:hover{
-    background-color: #ee975c;
-    color: #FFF;
+    opacity: 30%;
 } 
+
 @media(max-width:20em){
      .main_card img{
         margin: auto auto;
