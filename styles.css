@@ -27,7 +27,7 @@ a:link{
   padding: 10px;
  }
  h1{
-     animation: fade 0.5s 1s forwards;
+     animation: fade 1s 0.5s forwards;
      overflow: hidden;
      position: relative;
      color: black;
@@ -35,7 +35,7 @@ a:link{
      margin: auto auto;
  }
  h1::after{
-    animation: text-reveal 2s cubic-bezier(0.85, 0, 0.15, 1) forwards;
+    animation: text-reveal 1s cubic-bezier(0.85, 0, 0.15, 1) forwards;
     background-color: red;
     content:'';
     display: block;
