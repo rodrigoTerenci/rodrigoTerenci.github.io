@@ -1,7 +1,9 @@
 body{
-  background: url(./_cdn/img/wallpaperflare.com_wallpaper.jpg);
-  color : white;
- 
+  animation: linearGradient 10s ease-in-out infinite;
+  background: linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab ) no-repeat;
+  background-size: 300% 300%;
+  color : white; 
+  height: 100vh;
 }
 header{
   width:100%;
@@ -23,6 +25,25 @@ a:link{
   list-style-type: none;
   display: inline-block;
   padding: 10px;
+ }
+ h1{
+     animation: fade 0.5s 1s forwards;
+     overflow: hidden;
+     position: relative;
+     color: black;
+     opacity: 0;
+     margin: auto auto;
+ }
+ h1::after{
+    animation: text-reveal 0.5s ease forwards;
+    background-color: red;
+    content:'';
+    display: block;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
  }
  .main_card{
    /* padding: 50px;*/
@@ -51,6 +72,7 @@ a:link{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    border-radius: 10px;
 }
 .main_social_network > article{
     flex-basis: 33%;
@@ -73,5 +95,32 @@ a:link{
         border: 3px solid #ee975c;
         width: 150px;
         height: 150px;
+     }
+ }
+
+ @keyframes text-reveal{
+     from{
+        transform: translateX(-101%);
+     }
+     to{
+        transform: translateX(101%);
+     }
+ }
+
+ @keyframes fade{
+    to{
+        opacity: 1;
+    }
+ }
+
+ @keyframes linearGradient{
+     0%{
+        background-position: 0 50%;
+     }
+     50%{
+        background-position: 100% 50%;
+     }
+     100%{
+        background-position: 0 50%;
      }
  }
