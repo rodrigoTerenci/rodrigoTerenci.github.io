@@ -35,7 +35,7 @@ a:link{
      margin: auto auto;
  }
  h1::after{
-    animation: text-reveal 0.5s ease forwards;
+    animation: text-reveal 2s cubic-bezier(0.85, 0, 0.15, 1) forwards;
     background-color: red;
     content:'';
     display: block;
