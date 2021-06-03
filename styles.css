@@ -1,10 +1,14 @@
+:root{
+    --bg-color: linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab )
+}
 body{
   animation: linearGradient 10s ease-in-out infinite;
-  background: linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab ) no-repeat;
+  background:  var(--bg-color)no-repeat;
   background-size: 300% 300%;
   color : white; 
   height: 100vh;
 }
+
 header{
   width:100%;
   margin:auto;
@@ -52,12 +56,21 @@ a:link{
     font-size: 20px;
     
  }
-
+ svg{
+    width: 40%;
+    height: 40%;
+    fill: transparent;  /* #65bbf2 */
+    stroke: black;
+    stroke-width: 4px;
+    stroke-dasharray: 647; 
+    stroke-dashoffset: 0; 
+    animation: dash 2s reverse infinite;
+ }
  .main_card header p{
     color: white;
 }
  .main_card img{
-     margin: auto auto;
+    margin: auto auto;
      border-radius: 100%;
      border: 3px solid #ee975c;
      width: 250px;
@@ -122,5 +135,13 @@ a:link{
      }
      100%{
         background-position: 0 50%;
+     }
+ }
+ @keyframes dash{
+     from{
+         stroke-dashoffset: 0;
+     }
+     to{
+         stroke-dashoffset: 647;
      }
  }
