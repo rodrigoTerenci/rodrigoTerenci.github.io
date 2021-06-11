@@ -90,7 +90,7 @@ h1::after{
    position:absolute;
    border-radius:50%;
    border: 6px solid #e5e5e5;
-   animation: load-full 2s forwards;  
+   animation: load-full 5s forwards;  
  }
  .load::before:hover{
    animation: is-rotating 3s infinite;
@@ -137,7 +137,7 @@ h1::after{
        border-radius:50%;
        border: 6px solid #e5e5e5;
        border-top-color:goldenrod;
-       animation: load-full 2s forwards;  
+       animation: load-full 5s forwards;  
    }
  }
 
