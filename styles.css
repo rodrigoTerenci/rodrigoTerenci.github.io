@@ -36,9 +36,12 @@ a:link{
      position: relative;
      color: black;
      opacity: 0;
-     margin: auto auto;
+     margin: 50px auto;
+     height:300px;
+     width:300px;
  }
- h1::after{
+
+h1::after{
     animation: text-reveal 1s cubic-bezier(0.85, 0, 0.15, 1) forwards;
     background-color: red;
     content:'';
@@ -48,13 +51,13 @@ a:link{
     bottom: 0;
     left: 0;
     right: 0;
- }
+}
  .main_card{
    /* padding: 50px;*/
     text-align: center;
     margin: auto auto;
     font-size: 20px;
-    
+    position:relative;
  }
  svg{
     width: 40%;
@@ -76,6 +79,24 @@ a:link{
      width: 250px;
      height: 250px;
  }
+ .load{
+   position:relative;
+ }
+
+.load::before{
+   content:"";
+   width:250px;
+   height:250px;
+   position:absolute;
+   border-radius:50%;
+   border: 6px solid #e5e5e5;
+   border-top-color:goldenrod;
+   animation: load-full 2s forwards;  
+ }
+ .load::before:hover{
+   animation: is-rotating 3s infinite;
+ }
+
 /*SOCIAL NETWORK*/
 .main_social_network {
     width: 80%;
@@ -109,6 +130,16 @@ a:link{
         width: 150px;
         height: 150px;
      }
+     .load::before{
+       content:"";
+       width:150px;
+       height:150px;
+       position:absolute;
+       border-radius:50%;
+       border: 6px solid #e5e5e5;
+       border-top-color:goldenrod;
+       animation: load-full 2s forwards;  
+   }
  }
 
  @keyframes text-reveal{
@@ -145,3 +176,29 @@ a:link{
          stroke-dashoffset: 647;
      }
  }
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes load-full{
+  0%{
+    border-top-color:gold;
+  }
+  25%{
+    border-top-color:gold;
+    border-right-color:gold;
+  }
+   50%{
+    border-top-color:gold;
+    border-right-color:gold;
+    border-bottom-color:gold;  
+  }
+  100%{
+    border-top-color:gold;
+    border-right-color:gold;
+    border-bottom-color:gold; 
+    border-left-color:gold;
+  }
+}
