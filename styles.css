@@ -90,7 +90,6 @@ h1::after{
    position:absolute;
    border-radius:50%;
    border: 6px solid #e5e5e5;
-   border-top-color:goldenrod;
    animation: load-full 2s forwards;  
  }
  .load::before:hover{
