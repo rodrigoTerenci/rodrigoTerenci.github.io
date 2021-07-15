@@ -199,3 +199,36 @@ h1::after{
     border-left-color:gold;
   }
 }
+
+/*********************************************************************for fluid "water" animation use****************************************************************************
+ .load{
+   width:250px;
+   height:250px;
+   position:relative;
+   overflow:hidden;
+   border: solid 20px;
+   content-align:center;
+   border-radius:50%;
+ }
+
+.load::before{
+   content:"";
+   width:500px;
+   height:500px;
+   left:50%;
+   position:absolute;
+   background: white;
+   border-radius:40%;
+   transform:translateX(-50%);
+   animation: fill 5s forwards;  
+ @keyframes fill{
+  from{
+  top:250px;
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to{
+    top:0px;
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+***************************************************************************************END**************************************************************************************/
