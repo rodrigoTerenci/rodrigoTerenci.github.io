@@ -1,6 +1,5 @@
 
-var elemento = document.getElementById('dadosPessoais')
-elemento.hidden=true
+
 
 let change= document.getElementsByClassName('load')
 
