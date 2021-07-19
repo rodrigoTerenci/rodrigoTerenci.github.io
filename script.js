@@ -8,4 +8,5 @@ let changeClass= ()=>{
     
     change.hidden;
 }
-change.onclick = () => changeClass()
+change.addEventListener('click',changeClass)
+/*change.onclick = () => changeClass()*/
