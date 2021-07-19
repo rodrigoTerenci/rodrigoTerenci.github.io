@@ -96,7 +96,7 @@ h1::after{
   position:relative;
   overflow:hidden;
   border: solid 20px;
-  content-align:center;
+  /*content-align:center;*/
   border-radius:50%;
 }
 
