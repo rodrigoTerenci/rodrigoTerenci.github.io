@@ -28,4 +28,4 @@ async function robo() {
    await browser.close();
 }
 
-robo()
+export default robo()
