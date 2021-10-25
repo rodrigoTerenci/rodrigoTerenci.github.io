@@ -1,5 +1,9 @@
-import puppeteer from 'puppeteer'
-import readlineSync from 'readline-sync'
+/*import puppeteer from 'puppeteer'
+import readlineSync from 'readline-sync'*/
+
+const puppeteer= require('puppeteer')
+const readlineSync= require('readline-sync')
+
 
 
 console.log('Bem vindo ao Bot conversor 🤖💰');
@@ -28,4 +32,4 @@ async function robo() {
    await browser.close();
 }
 
-export default robo()
+robo()
