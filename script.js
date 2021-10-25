@@ -4,8 +4,8 @@ const elToggle=(e)=> e.classList.toggle('water')
 
 el.onclick= () => elToggle(el)
 
-const puppeteer = require('puppeteer');
-const readlineSync = require('readline-sync');
+import puppeteer from 'puppeteer'
+import readlineSync from 'readline-sync'
 
 
 console.log('Bem vindo ao Bot conversor 🤖💰');
