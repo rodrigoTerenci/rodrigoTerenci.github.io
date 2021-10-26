@@ -1,8 +1,8 @@
-/*import puppeteer from 'puppeteer'
-import readlineSync from 'readline-sync'*/
+import puppeteer from 'puppeteer'
+import readlineSync from 'readline-sync'
 
-const puppeteer= require('puppeteer')
-const readlineSync= require('readline-sync')
+/*const puppeteer= require('puppeteer')
+const readlineSync= require('readline-sync')'*/
 
 
 
