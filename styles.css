@@ -1,10 +1,10 @@
 :root{
-    --bg-color: linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab )
+    --bg-color: linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab )*/
 }
 body{
   animation: linearGradient 10s ease-in-out infinite;
-  background:  var(--bg-color)no-repeat;
-  background-size: 300% 300%;
+  background-image: url(./estrelas.png);
+  /*background-size: 300% 300%;*/
   color : white; 
   height: 100vh;
 }
@@ -70,12 +70,12 @@ h1::after{
  .main_card header p{
     color: white;
 }
- .main_card img{
-    margin: auto auto;
-     border-radius: 100%;
-     border: 3px solid #ee975c;
-     width: 250px;
-     height: 250px;
+.main_card  article  img{
+  margin: auto auto;
+  border-radius: 100%;
+  border: 3px solid #ee975c;
+  width: 250px;
+  height: 250px;
  }
  .load{
    position:relative;
@@ -135,7 +135,28 @@ h1::after{
 
 .main_social_network > article h3 a:hover{
     opacity: 30%;
+}
+.stars{
+  margin:auto auto;
+  position: relative;
+ 
 } 
+.stars img{
+  width: 800px;
+  height: 500px;
+  
+}
+.stars::before{
+  content:"";
+  position: absolute;
+  width:100vw;
+  height:100vh;
+  /*background-color: blueviolet;*/
+}
+.stars_social_network{
+  margin: auto auto;
+  align-items: center;
+}
 
 @media(max-width:20em){
      .main_card img{
