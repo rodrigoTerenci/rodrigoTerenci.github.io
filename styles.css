@@ -2,7 +2,7 @@
     --bg-color: linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab )*/
 }
 body{
-  animation: linearGradient 10s ease-in-out infinite;
+  animation: linearGradient 50s ease-in-out infinite;
   background-image: url(./estrelas.png);
   /*background-size: 300% 300%;*/
   color : white; 
