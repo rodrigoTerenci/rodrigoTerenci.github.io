@@ -25,7 +25,7 @@ async function robo() {
 
 
  const resultado = await page.evaluate(() => {
-    document.getElementsByClassName('textarea').value = "Esse eh um valor de teste"
+    document.querySelector('#tw-source-text-ta').value = "Esse eh um valor de teste"
     return document.querySelector('.Y2IQFc').value;
   });
   console.log(resultado)
