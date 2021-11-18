@@ -1,24 +1,28 @@
 *{
   font-size:var(--font-size);
+  background-color: var(--bg-color);
+  color: var(--font-color);
 }
 :root{
-    --bg-color: linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab );
+    --bg-color:white;
+    --bg-color-linear-gradient: linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab );
     --bs-purple: #6f42c1;
     --bs-indigo: #6610f2;
-
+    --font-color:gray;
+    --font-size: large;
+    --strong-color: #ee975c;
 }
 body{
   animation: linearGradient 50s ease-in-out infinite;
-  background-color: var(--bs-indigo);
   /*background-size: 300% 300%;*/
   color : whitesmoke;
   height: 100vh;
   overflow: hidden;
   position: relative;
 }
-body::before{
+/*body::before{
   animation: linearGradient 50s ease-in-out infinite;
-  /*animation: text-reveal 1s cubic-bezier(0.85, 0, 0.15, 1) forwards;*/
+  animation: text-reveal 1s cubic-bezier(0.85, 0, 0.15, 1) forwards;
   background-image: url(./estrelas.png);
   content:'';
   display: block;
@@ -28,7 +32,7 @@ body::before{
   left: 0;
   right: 0;
 }
-
+*/
 
 header{
   width:100%;
@@ -41,6 +45,10 @@ article{
 }
 a:link{
     padding: 10px;
+}
+a i:hover{
+  color:var(--strong-color);
+  transform: scale(3);
 }
 .nav{
   background-color: #0080FF;
@@ -70,6 +78,22 @@ h1::after{
     left: 0;
     right: 0;
 }
+strong{
+  color:var(--strong-color);
+}
+
+svg{
+  width: 40%;
+  height: 40%;
+  fill: transparent;  /* #65bbf2 */
+  stroke: black;
+  stroke-width: 4px;
+  stroke-dasharray: 647; 
+  stroke-dashoffset: 0; 
+  animation: dash 2s reverse infinite;
+}
+/*CLASS*/
+
  .main_card{
    /* padding: 50px;*/
     text-align: center;
@@ -77,27 +101,19 @@ h1::after{
     font-size: 20px;
     position:relative;
  }
- svg{
-    width: 40%;
-    height: 40%;
-    fill: transparent;  /* #65bbf2 */
-    stroke: black;
-    stroke-width: 4px;
-    stroke-dasharray: 647; 
-    stroke-dashoffset: 0; 
-    animation: dash 2s reverse infinite;
- }
+
  .main_card header p{
     color: white;
 }
 .main_card img{
-  margin: auto auto;
+  animation: load-full 5s forwards;
+  margin: 20px auto;
   border-radius: 50%;
-  border: 3px solid #ee975c;
+  border: 6px solid white;
   width: 250px;
   height: 250px;
  }
- .load{
+ /*.load{
    position:relative;
  }
 
@@ -109,7 +125,7 @@ h1::after{
    border-radius:50%;
    border: 6px solid #e5e5e5;
    animation: load-full 5s forwards;  
- }
+ }*/
  .water{
   width:250px;
   height:250px;
@@ -136,7 +152,7 @@ h1::after{
 .main_social_network {
     width: 80%;
     margin: auto;
-    background-color: #ee975c;
+   /* background-color: #ee975c;*/
     color:#2D3142 !important;
     display: flex;
     flex-wrap: wrap;
@@ -156,50 +172,20 @@ h1::after{
 .main_social_network > article h3 a:hover{
     opacity: 30%;
 }
-.stars{
-  margin:auto auto;
-  position: relative;
- 
-} 
-.stars img{
-  width: 800px;
-  height: 500px;
-  
-}
-.stars::before{
-  content:"";
-  position: absolute;
-  width:100vw;
-  height:100vh;
-  /*background-color: blueviolet;*/
-}
-.stars_social_network{
-  margin: auto auto;
-  align-items: center;
-}
 
 @media(max-width:20em){
   :root{
     --font-size:x-small;
-    --bs-indigo:black;
+    --bg-color:black;
   }  
      .main_card img{
-        margin: auto auto;
+        animation: load-full 5s forwards;
         border-radius: 50%;
-        border: 3px solid #ee975c;
+        border: 3px solid white;
         width: 150px;
         height: 150px;
      }
-     .load::before{
-       content:"";
-       width:150px;
-       height:150px;
-       position:absolute;
-       border-radius:50%;
-       border: 6px solid #99c1dd;
-       /*border-top-color:goldenrod;*/
-       animation: load-full 5s forwards;  
-     }
+     
     .water{
         width:150px;
         height:150px;
