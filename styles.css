@@ -1,11 +1,14 @@
 :root{
-    --bg-color: linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab )*/
+    --bg-color: linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab );
+    --bs-purple: #6f42c1;
+    --bs-indigo: #6610f2;
+
 }
 body{
   animation: linearGradient 50s ease-in-out infinite;
-  background-image: url(./estrelas.png);
+  background-color: var(--bs-indigo);
   /*background-size: 300% 300%;*/
-  color : white; 
+  color : whitesmoke;
   height: 100vh;
 }
 
@@ -34,7 +37,6 @@ a:link{
      animation: fade 1s 0.5s forwards;
      overflow: hidden;
      position: relative;
-     color: black;
      opacity: 0;
      margin: auto auto;
    }
@@ -70,9 +72,9 @@ h1::after{
  .main_card header p{
     color: white;
 }
-.main_card  article  img{
+.main_card img{
   margin: auto auto;
-  border-radius: 100%;
+  border-radius: 50%;
   border: 3px solid #ee975c;
   width: 250px;
   height: 250px;
@@ -244,22 +246,22 @@ h1::after{
 
 @keyframes load-full{
   0%{
-    border-top-color:gold;
+    border-top-color:#ee975c;
   }
   25%{
-    border-top-color:gold;
-    border-right-color:gold;
+    border-top-color:#ee975c;
+    border-right-color:#ee975c;
   }
    50%{
-    border-top-color:gold;
-    border-right-color:gold;
-    border-bottom-color:gold;  
+    border-top-color:#ee975c;
+    border-right-color:#ee975c;
+    border-bottom-color:#ee975c;  
   }
   100%{
-    border-top-color:gold;
-    border-right-color:gold;
-    border-bottom-color:gold; 
-    border-left-color:gold;
+    border-top-color:#ee975c;
+    border-right-color:#ee975c;
+    border-bottom-color:#ee975c; 
+    border-left-color:#ee975c;
   }
 }
 @keyframes fill{
