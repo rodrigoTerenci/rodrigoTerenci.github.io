@@ -1,5 +1,7 @@
 *{
   font-size:var(--font-size);
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: var(--bg-color);
   color: var(--font-color);
 }
@@ -15,7 +17,6 @@
 body{
   animation: linearGradient 50s ease-in-out infinite;
   /*background-size: 300% 300%;*/
-  color : whitesmoke;
   height: 100vh;
   overflow: hidden;
   position: relative;
@@ -102,10 +103,8 @@ svg{
     position:relative;
  }
 
- .main_card header p{
-    color: white;
-}
-.main_card img{
+ 
+ img{
   animation: load-full 5s forwards;
   margin: 20px auto;
   border-radius: 50%;
@@ -175,7 +174,7 @@ svg{
 
 @media(max-width:22.5em){
   :root{
-    --font-size:x-small;
+    --font-size:small;
     --bg-color:black;
   }  
      .main_card img{
