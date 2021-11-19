@@ -10,9 +10,11 @@
     --bg-color-linear-gradient: linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab );
     --bs-purple: #6f42c1;
     --bs-indigo: #6610f2;
+    --meta-blue:#385898;
     --font-color:gray;
     --font-size: large;
     --strong-color: #ee975c;
+    --icon-color:gray;
 }
 body{
   animation: linearGradient 50s ease-in-out infinite;
@@ -41,15 +43,28 @@ header{
   padding: auto;
 }
 article{
-    margin: auto auto;
+  margin: auto auto;
+  
     /*justify-content: center;*/
 }
+
 a:link{
     padding: 10px;
 }
-a i:hover{
-  color:var(--strong-color);
+i:hover{
+  opacity: 30;
+  border-radius:50%;
   transform: scale(3);
+  box-shadow: 2px 2px 2px var(--icon-color);
+  color:var(--icon-color)
+}
+#meta-fb:hover{
+ --icon-color:var(--meta-blue);
+}
+#instagram:hover{
+  border-radius: 25%;
+  --icon-color: white;
+  --bg-color:red;
 }
 .nav{
   background-color: #0080FF;
@@ -112,6 +127,9 @@ svg{
   width: 250px;
   height: 250px;
  }
+ img:hover{
+  box-shadow: 5px 10px 10px 20px #e73c7e;
+}
  /*.load{
    position:relative;
  }
@@ -163,18 +181,18 @@ svg{
 }
 
 .main_social_network > article h3 a{
-    color:#2D3142;
     width: 100px;
     height: 300px;
 }
 
+/****in test*********************
 .main_social_network > article h3 a:hover{
     opacity: 30%;
-}
+}*/
 
 @media(max-width:22.5em){
   :root{
-    --font-size:small;
+    --font-size: medium;
     --bg-color:black;
   }  
      .main_card img{
@@ -199,7 +217,7 @@ svg{
 
       .water::before{
         content:"";
-        width:250px;
+        width:250px; 
         height:254px;
         left:50%;
         position:absolute;
