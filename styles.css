@@ -10,12 +10,14 @@
     --bg-color-linear-gradient: linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab );
     --bs-purple: #6f42c1;
     --bs-indigo: #6610f2;
+    --border-color: #ee975c; 
     --meta-blue:#385898;
     --font-color:gray;
     --font-size: large;
     --strong-color: #ee975c;
     --icon-color:gray;
 }
+/*tag's styles*/
 body{
   animation: linearGradient 50s ease-in-out infinite;
   /*background-size: 300% 300%;*/
@@ -58,6 +60,51 @@ i:hover{
   box-shadow: 2px 2px 2px var(--icon-color);
   color:var(--icon-color)
 }
+h1{
+  animation: fade 1.5s 0.5s forwards;
+  overflow: hidden;
+  position: relative;
+  opacity: 0;
+  margin: auto auto;
+}
+
+h1::after{
+ animation: text-reveal 1s cubic-bezier(0.85, 0, 0.15, 1) forwards;
+ background-color: red;
+ content:'';
+ display: block;
+ position: absolute;
+ top:0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+}
+strong{
+color:var(--strong-color);
+}
+img{
+  animation: load-full 5s forwards;
+  margin: 20px auto;
+  border-radius: 50%;
+  border: 6px solid white;
+  width: 250px;
+  height: 250px;
+ }
+ img:hover{
+  box-shadow: 5px 10px 10px 20px #e73c7e;
+}
+
+svg{
+width: 40%;
+height: 40%;
+fill: transparent;  /* #65bbf2 */
+stroke: black;
+stroke-width: 4px;
+stroke-dasharray: 647; 
+stroke-dashoffset: 0; 
+animation: dash 2s reverse infinite;
+}
+/*IDs*/
 #meta-fb:hover{
  --icon-color:var(--meta-blue);
 }
@@ -66,48 +113,7 @@ i:hover{
   --icon-color: white;
   --bg-color:red;
 }
-.nav{
-  background-color: #0080FF;
-  padding: 210px;
-}
-.nav li{
-  list-style-type: none;
-  display: inline-block;
-  padding: 10px;
- }
- h1{
-     animation: fade 1.5s 0.5s forwards;
-     overflow: hidden;
-     position: relative;
-     opacity: 0;
-     margin: auto auto;
-   }
 
-h1::after{
-    animation: text-reveal 1s cubic-bezier(0.85, 0, 0.15, 1) forwards;
-    background-color: red;
-    content:'';
-    display: block;
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-strong{
-  color:var(--strong-color);
-}
-
-svg{
-  width: 40%;
-  height: 40%;
-  fill: transparent;  /* #65bbf2 */
-  stroke: black;
-  stroke-width: 4px;
-  stroke-dasharray: 647; 
-  stroke-dashoffset: 0; 
-  animation: dash 2s reverse infinite;
-}
 /*CLASS*/
 
  .main_card{
@@ -119,17 +125,7 @@ svg{
  }
 
  
- img{
-  animation: load-full 5s forwards;
-  margin: 20px auto;
-  border-radius: 50%;
-  border: 6px solid white;
-  width: 250px;
-  height: 250px;
- }
- img:hover{
-  box-shadow: 5px 10px 10px 20px #e73c7e;
-}
+
  /*.load{
    position:relative;
  }
@@ -184,6 +180,16 @@ svg{
     width: 100px;
     height: 300px;
 }
+.nav{
+  background-color: #0080FF;
+  padding: 210px;
+}
+.nav li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+ }
+
 
 /****in test*********************
 .main_social_network > article h3 a:hover{
@@ -283,10 +289,7 @@ svg{
     border-bottom-color:#ee975c;  
   }
   100%{
-    border-top-color:#ee975c;
-    border-right-color:#ee975c;
-    border-bottom-color:#ee975c; 
-    border-left-color:#ee975c;
+    border-color: var(--border-color);
   }
 }
 @keyframes fill{
