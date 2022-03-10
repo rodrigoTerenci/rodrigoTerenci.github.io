@@ -9,3 +9,5 @@ const
     app.use(express.static('.'))
     server.listen(port)
     console.log('Conecção Estabelicida com Sucesso...')
+
+//createServer and start listening
