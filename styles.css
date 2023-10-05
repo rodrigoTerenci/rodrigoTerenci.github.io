@@ -20,24 +20,24 @@
 /*tag's styles*/
 body{
   animation: linearGradient 50s ease-in-out infinite;
-  /*background-size: 300% 300%;*/
+  background-size: 300% 300%;
   height: 100vh;
   overflow: hidden;
   position: relative;
 }
-/*body::before{
+/* body::before{
   animation: linearGradient 50s ease-in-out infinite;
   animation: text-reveal 1s cubic-bezier(0.85, 0, 0.15, 1) forwards;
   background-image: url(./estrelas.png);
   content:'';
-  display: block;
-  position: absolute;
+  display:block;
+  position:fixed;
   top:0;
   bottom: 0;
   left: 0;
   right: 0;
-}
-*/
+} */
+
 
 header{
   width:100%;
@@ -82,16 +82,21 @@ h1::after{
 strong{
 color:var(--strong-color);
 }
+#avatar{
+  margin: auto;
+
+}
 img{
   animation: load-full 5s forwards;
-  margin: 20px auto;
   border-radius: 50%;
   border: 6px solid white;
   width: 250px;
   height: 250px;
+  margin: 0 auto;
  }
+
  img:hover{
-  box-shadow: 5px 10px 10px 20px #e73c7e;
+  box-shadow: inset 0px 0px 10px 25px #ee975c;
 }
 
 svg{
@@ -119,47 +124,33 @@ animation: dash 2s reverse infinite;
  .main_card{
    /* padding: 50px;*/
     text-align: center;
-    margin: auto auto;
     font-size: 20px;
     position:relative;
  }
 
- 
-
- /*.load{
-   position:relative;
- }
-
-.load::before{
-   content:"";
-   width:250px;
-   height:250px;
-   position:absolute;
-   border-radius:50%;
-   border: 6px solid #e5e5e5;
-   animation: load-full 5s forwards;  
- }*/
  .water{
+    width: 260px;
+    height: 258px;
+    border: 2px solid black;
+    position:relative;
+    overflow:hidden;
+    border-radius:50%;
+
+  }
+
+.water::after{
+  content:"";
   width:250px;
   height:250px;
-  position:relative;
-  overflow:hidden;
-  border: solid 20px;
-  /*content-align:center;*/
-  border-radius:50%;
-}
-
-.water::before{
-  content:"";
-  width:500px;
-  height:500px;
   left:50%;
   position:absolute;
-  background: aliceblue;
+  display: block;
+  background: rgb(21, 80, 131);
   opacity:0.5;
   border-radius:40%;
   transform:translateX(-50%);
-  animation: fill 5s forwards; }
+  animation: fill 5s forwards; 
+}
 
 /*SOCIAL NETWORK*/
 .main_social_network {
@@ -196,7 +187,7 @@ animation: dash 2s reverse infinite;
     opacity: 30%;
 }*/
 
-@media(max-width:57em){
+/* @media(max-width:57em){
   :root{
     --font-size: medium;
     --bg-color:black;
@@ -210,12 +201,12 @@ animation: dash 2s reverse infinite;
      }
      
     .water{
-        width:150px;
-        height:150px;
+        width:148px;
+        height:148px;
         position:relative;
         overflow:hidden;
         border: solid 2px aliceblue;
-        /*content-align:center;*/
+        content-align:center;
         border-radius:50%;
     }
 
@@ -233,7 +224,7 @@ animation: dash 2s reverse infinite;
         transform:translateX(-50%);
         animation: fill 5s ease-in-out forwards; 
     }
- }
+ } */
 
  @keyframes text-reveal{
      from{
@@ -294,7 +285,7 @@ animation: dash 2s reverse infinite;
 }
 @keyframes fill{
   from{
-  top:250px;
+    top:250px;
     transform: translateX(-50%) rotate(0deg);
   }
   to{
